@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*Cabesera de la Pagina*/
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+    height: 100px;
+    background: #FFFFFF;
+}
+header div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    order: 0;
+    flex-grow: 0;
+}
+header div.logo img {
+    width: 70px;
+    height: 70px;
+}
+header div.logo img:hover {
+    width: 75px;
+    height: 75px;
+    transition: 0.2s;
+}
+
+/* Barra de Navegacion */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    order: 1;
+    flex-grow: 1;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;  
+}
+nav ul li.active, nav ul li:hover {
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+nav ul li a {
+    font-size: 16px;
+    color: #1E1E1E;
+    text-decoration: none;
+}
+/*Carrusel Estilo Personalizado*/
+div.carrusel-personalizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+div.carrusel-personalizado div.carousel-inner div.carousel-item img {
+    object-fit: fill;
+}
+
+/*Dual Imagen*/
+main div.dual {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 64px;
+    background-color: #ffffff;
+}
+@media (max-width: 686px){
+    main div.dual {flex-wrap: wrap;}
+}
+
+main div.dual img {
+    width: 32em;
+    height: 21.875em;
+    min-width: 280px;
+    min-height: 200px;
+    border-radius: 8px;
+}
+
+/*Primeras Contenido - Seccion */
+main section.primer-contenido {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px;
+    gap: 48px;
+    background-color: #ffffff;
+}
+
+/*Primeras Contenido - Titulos */
+main section.primer-contenido div.titulo {
+    background-color: #ffffff;
+}
+main section.primer-contenido div.titulo h3 {
+    color: #757575;
+}
+
+/*Primeras Contenido - Seccion_Cartas */
+main section.primer-contenido div.carta {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/*Primeras Contenido - Cartas */
+main section.primer-contenido div.carta article {
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+@media (max-width: 576px){
+    main section.primer-contenido div.carta article {flex-wrap: wrap;}
+}
+
+/*Primeras Contenido - Seccion_Cartas - SeccionIMG */
+main section.primer-contenido div.carta article div.img {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-self: center;
+    width: 160px;
+    height: 160px;
+}
+main section.primer-contenido div.carta article div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Primeras Contenido - Seccion_Cartas - SeccionTexto */
+main section.primer-contenido div.carta article div.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+main section.primer-contenido div.carta article div.texto h2 {
+    font-size: 1.5em;
+}
+main section.primer-contenido div.carta article div.texto p {
+    color: #757575;
+    font-size: 1em;
+}
+
+/*Segundo Contenido - Seccion*/
+main section.segundo-contenido {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px;
+    gap: 48px;
+    background-color: #ffffff;
+}
+main section.segundo-contenido div.titulo h3 {
+    color: #757575;
+}
+
+/*Segundo Contenido - SeccionCartas*/
+main section.segundo-contenido div.carta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+/*Segundo Contenido - Cartas*/
+main section.segundo-contenido div.carta article {
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 325.33px;
+}
+/*Segundo Contenido - Cartas - IMG*/
+main section.segundo-contenido div.carta article div.img {
+    box-sizing: border-box;
+    width: 160px;
+    height: 160px;
+}
+main section.segundo-contenido div.carta article div.img  img{
+    width: 100%;
+    height: 100%;
+}
+/*Segundo Contenido - Cartas - Texto*/
+main section.segundo-contenido div.carta article div.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+main section.segundo-contenido div.carta article div.texto h2 {
+    font-size: 1.5em;
+}
+main section.segundo-contenido div.carta article div.texto p {
+    color: #757575;
+    font-size: 1em;
+}
+
+/*Pie de Pagina - Seccion*/
+footer {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #D9D9D9;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Pie de Pagina - Lista de Redes Sociales*/
+footer ul.redes-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+footer ul.redes-social li {
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 10px;
+}
+footer ul.redes-social li a {
+    color: #252525;
+    transition: 0.2s;
+}
+
+footer ul.redes-social li a:hover {
+    font-size: 35px;
+}
+
+/*Pie de Pagina - Otras direcciones*/
+footer ul.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer ul.menu li {
+    list-style: none;
+}
+footer ul.menu li a {
+    color: #1E1E1E;
+    font-size: 1.25em;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+footer ul.menu li a:hover {
+    opacity: 1;
+}
+
+footer p.copyright {
+    color: #1E1E1E;
+    text-align: center;
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+}
