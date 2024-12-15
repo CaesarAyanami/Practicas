@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    backdrop-filter: blur(0.4rem) brightness(0.5);
+}
+header {
+    background-color: #0a0a6a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+header a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+}
+header a img {
+    width: 90px;
+    height: 90px;
+}
+header a h1 {
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+nav {
+    background-color: #0d064a;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #a9b9dd;
+}
+main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+.contenido-principal, .contenido-secundario {
+    border: solid 1px;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(25, 25, 50,0.5);
+}
+.contenido-principal h1{
+    font-size: 1.56em;
+}
+.contenido-principal h3{
+    font-size: 1.56em;
+    margin: 10px;
+}
+.contenido-principal img {
+    display: block;
+    margin: 15px auto;
+    width: 600px;
+    height: 400px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+.contenido-principal h2{
+    font-size: 1.56em;
+}
+/* Este es de la contacto.html*/
+.contacto a {
+    text-decoration: none;
+    color: #fff;
+}
+.contenido_alineado{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center center;
+    gap: 25px;
+}
+.contenido_alineado p {
+    text-align: justify;
+    margin: 15px;
+}
+.contenido_alineado video {
+    border: solid 1px;
+    border-radius: 5px;
+    width: 95%;
+    margin: 25px 0px 25px 0px;
+}
+footer {
+    background-color: #0d064a;
+    color: #fff;
+    padding: 20px;
+}
