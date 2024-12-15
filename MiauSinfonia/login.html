@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plugin/fontawesome-free-6.6.0-web/css/all.min.css"><!--Css de FotAwesome-->
+    <link rel="stylesheet" href="assets/css/login-register.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="titulo">
+                <h2>Inicia sesion</h2>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <form id="loginForm">
+                <div class="input">
+                    <label>Usuario <i class="fa-regular fa-envelope"></i></label>
+                    <input type="text" placeholder="ingresa tu Usuario" id="user" required autofocus>
+                </div>
+                <div class="input">
+                    <label>Contraseña <i class="fa-solid fa-lock"></i> </label>
+                    <input type="password" placeholder="ingresa tu Contraseña" id="password" required>
+                </div>
+                <input type="submit" value="Ingresar">
+            </form>
+            <p>No tienes una cuenta? <a href="signup.html">Registro</a></p>
+        </div>
+    </main>
+    <script src="assets/js/inicioSeccion.js"></script>
+</body>
+</html>

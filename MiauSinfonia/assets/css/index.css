@@ -1,0 +1,532 @@
+/*Parametros de Todo*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*Aqui Comienza el Header------------------------------------*/
+
+/*Parametros del Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #282828;
+    
+}
+
+/*Parametros dev donde va el logo*/
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+/*Parametros del logo*/
+header div.logo img {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 5px;
+    width: 65px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+
+/*Parametros nombre de pagina*/
+header div.logo p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*Parametros div de la barra de busquedad*/
+header div.busqueda div.grupo-input {
+    position: relative;
+}
+/*Parametros del input de busquedad*/
+header div.busqueda div.grupo-input input {
+    box-sizing: border-box;
+    width: 320px;
+    padding: 10px 50px 10px 20px; /* Espacio para el icono */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/*Parametros del boton submit*/
+header div.busqueda div.grupo-input button {
+    box-sizing: border-box;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1aa34a;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+}
+
+/*Parametros dev del boton submit:Efecto al pasar el Mouses*/
+header div.busqueda div.grupo-input button:hover {
+    background-color: #25db65;
+    cursor: pointer;
+}
+
+/*Parametros del Icono de Font Awesome en el Boton*/
+header div.busqueda div.grupo-input button i {
+    font-size: 16px;
+}
+
+/*Parametros dev donde van botones de Inicio de sesion*/
+header div.login {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/*Parametros de Div Logout*/
+header div.logout {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/*Parametros de letra de primer buton de ambos Div Login y Logout*/
+header div.login div.IniciarS a,
+header div.logout div.NameS a{
+    color: #ffffff;
+    font-size: 20px;
+}
+/*Parametro de letra del buton iniciar Sesion: efecto al pasar el mouses*/
+header div.login div.IniciarS a:hover {
+    color: #e4e4e4;
+    font-size: 22px;
+    transition: 0.1s;
+}
+/*Parametros de letra del segundo boton Div Login y Logout*/
+header div.login div.Registrarse a,
+header div.logout div.SalirSeccion a
+{
+    padding: 10px 20px;
+    background-color: #1db954; /* Color verde similar a Spotify */
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/*Parametro de letra del segundo boton Div Login y Logout: efecto al pasar el mouses*/
+header div.login div.Registrarse a:hover
+header div.logout div.SalirSeccion a:hover
+{
+    background-color: #1aa34a;
+    font-size: 22px;
+    transition: 0.1s;
+}
+
+/*Aqui termina el Header*/
+/*-------------------------------------------*/
+
+
+
+/*Aqui Conmienza el Main*/
+main {
+    padding: 20px;
+    background-color: #4d4d4d;
+    display: grid;
+    min-height: 100vh;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 20px;
+}
+
+/*Parametro de Div de Albumnes*/
+main div.Playlist {
+    background-color: #282828;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #0ea500;
+    border-radius: 8px;
+    box-shadow: 4px 4px 49px -2px rgba(65,230,0,0.1);
+}
+/*Parametro de Div de Albumnes:Efecto al pasar el Mouses*/
+main div.Playlist:hover {
+    background-color: #303030;
+}
+
+/*Parametro de Div de Imagen dentro del Album*/
+main div.Playlist div.img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #0ea500;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+/*Parametro de la Imagen del album*/
+main div.Playlist div.img img{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*Parametro del div titulo del album*/
+main div.Playlist div.title {
+    box-sizing: border-box;
+}
+
+/*Parametro de la letra titulo del album - ay va el nombre de la banda o artista*/
+main div.Playlist div.title h2{
+    margin-top: 10px;
+    color:#ffffff;
+    font-size: 1.25em;
+}
+
+/*Parametro de Div de categoria*/
+main div.Playlist div.categoria {
+    box-sizing: border-box;
+}
+
+/*Parametro de la letra de categoria*/
+main div.Playlist div.categoria p{
+    color:#cfcfcf;
+    font-size: 1.05em;
+}
+/*Parametro de Div donde esta el boton de play*/
+main div.Playlist button.play {
+    background-color: #1aa34a;
+    border: none;
+    border-radius: 8px;
+    height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/*Parametro de Div donde esta el boton de play: Efecto del Mouses*/
+main div.Playlist button.play:hover {
+    background-color: #25db65;
+    cursor: pointer;
+}
+
+/*Parametro de Div donde esta el boton de play:Efecto al hacer click*/
+main div.Playlist button.play:active {
+    transform: scale(0.97);
+}
+/* Aqui termina el Main*/
+/*-------------------------------------------*/
+
+/* Aqui Empieza Div de Paginacion*/
+/*Parametro de Div de Paginacion*/
+div.paginacion {
+    background-color: #5f5f5f;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    gap: 2px;
+}
+
+/*Parametro de botones del div*/
+div.paginacion button{
+    width: 25px;
+    height: 25px;
+    background-color: #282828;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*Parametro de botones del div:efecto del Mouses*/
+div.paginacion button:hover {
+    background-color: #4e4e4e;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/*Parametro de botones del div:Efecto al Hacer click*/
+div.paginacion button:active {
+    background-color: #7c7c7c;
+    transform: scale(0.80);
+    transition: 0.2s ease;
+}
+/*Parametro de botones del div: Propiedad cuando esta clikeado*/
+div.paginacion button.active {
+    background-color: #00ec8a;
+    color: #282828;
+    transform: scale(1.05);
+}
+/* Aqui termina el Div Paginacion*/
+/*-------------------------------------------*/
+
+/* Aqui Empieza Div de Paginacion*/
+
+/*Parametro del footer*/
+footer  {
+    margin-top: auto;
+    padding: 15px;
+    background-color: #282828;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Parametro del div reproductor*/
+footer div.reproductor{
+    box-sizing: border-box;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Parametro del div barra de Volumen y Progreso*/
+footer div.barra-progreso,
+footer div.volumen{
+    width: 100%;
+}
+
+/*Parametro del input barra de Volumen y Progreso*/
+footer div.barra-progreso input,
+footer div.volumen input
+{
+    -webkit-appearance: none;
+    width: 84%;
+    height: 0.4em;
+    outline: none;
+    border-radius: 3px;
+    background: #5f5f5f;
+}
+
+/*Parametro del circulo de el slider barra de Volumen y Progreso*/
+footer div.barra-progreso input::-webkit-slider-thumb,
+footer div.volumen input::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 35px;
+    background: #22a511;
+}
+
+/*parametro nuevo del Span de reproductor*/
+footer div.reproductor div.volumen span,
+footer div.reproductor div.barra-progreso span {
+    font-size: 1em;
+}
+
+/*
+    Parametro del div barra de Volumen y Progreso: 
+    Esta Cambia el color de la letras
+*/
+footer div.barra-progreso,
+footer div.volumen 
+{
+    color: #ffffff;
+}
+
+/*Parametro del div controles*/
+footer div.controles {
+    margin-top: 5px;
+}
+
+/*Parametro de los botones del div control*/
+footer div.controles button {
+    background-color: #1aa34a;
+    width: 45px;
+    height: 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/*Parametro de los botones del div control:Efecto del Mouses*/
+footer div.controles button:hover {
+    background-color: #0ea500;
+}
+
+/*Parametro del div Info cancion, donde sale la informacion de la cancion*/
+footer div.info-cancion {
+    text-align: center;
+    color: #ccc;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Parametro del div ImagenM donde esta la imagen*/
+footer div.info-cancion div.imageM {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+}
+
+/*Parametro del div Info donde esta la informacion*/
+footer div.info-cancion div.info {
+    width: 70%;
+}
+
+/*Parametro de la Imagen del album en el div ImagenM*/
+footer div.info-cancion div.imageM img {
+    border-radius: 35px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #25db65;
+    box-sizing: border-box;
+    padding: 2px;
+}
+/* Aqui termina el Div Footer*/
+/*-------------------------------------------*/
+
+
+/*Media Query Para el Responsive en Ciertas pantallas*/
+
+/*Media cuando la pantlla alcance Menos de 910px en with*/
+@media (max-width: 910px) {
+
+    /*parametro nuevo del Logo del Header*/
+    header div.logo img {
+        width: 50px;
+    }
+
+    /*parametro nuevo del nombre de la pg en el header*/
+    header div.logo p {
+        font-size: 15px;
+    }
+
+    /*parametro nuevo de la barra de busqueda*/
+    header div.busqueda div.grupo-input input {
+        width: 100%;
+        max-width: 320px;
+    }
+    /*parametro nuevo de las letras de los Botones del Header*/
+    header div.login div.IniciarS a,
+    header div.login div.Registrarse a,
+    header div.logout div.NameS a,
+    header div.logout div.SalirSeccion
+    {
+        font-size: 16px;
+    }
+
+    /*parametro nuevo del Reproductor*/
+    footer div.reproductor {
+        width: 100%; 
+    }
+    /*parametro del div info cancion- cambia de lineal a horizontal: de fila a columna*/
+    footer div.info-cancion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Media cuando la pantlla alcance Menos de 745 en with*/
+@media (max-width: 745px) {
+    /*parametro nuevo del Header de fila a columna*/
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    /*parametro nuevo del Logo del Header*/
+    header div.logo img {
+        width: 50px;
+    }
+    /*parametro nuevo del nombre de la pg en el header*/
+    header div.logo p {
+        font-size: 18px;
+    }
+    /*parametro nuevo de la barra de busqueda*/
+    header div.busqueda div.grupo-input input {
+        width: 100%;
+        max-width: 400px;
+    }
+    /*parametro de los div login y logout*/
+    header div.login,
+    header div.logout 
+    {
+        margin-top: 20px;
+    }
+
+    /*parametro nuevo del Reproductor*/
+    footer div.reproductor {
+        width: 100%; 
+    }
+
+    /*parametro nuevo del input de reproductor*/
+    footer div.barra-progreso input,
+    footer div.volumen input
+    {
+        width: 80%;
+    }
+
+    /*parametro nuevo del Span de reproductor*/
+    footer div.reproductor div.volumen span,
+    footer div.reproductor div.barra-progreso span {
+        font-size: 0.625em;
+    }
+
+    /*Parametro del div de la imagen del footer*/
+    footer div.info-cancion div.imageM {
+        width: 60px; 
+        height: 60px;
+    }
+}
+
+/*Media cuando la pantlla alcance Menos de 480 en with*/
+@media (max-width: 480px) {
+    /*parametro nuevo del Logo del Header*/
+    header div.logo img {
+        width: 40px;
+    }
+
+    /*parametro nuevo de la letra del header*/
+    header div.logo p {
+        font-size: 18px;
+    }
+
+    /*parametro nuevo de la letra del header*/
+    header div.login div.IniciarS a,
+    header div.login div.Registrarse a,
+    header div.logout div.NameS a,
+    header div.logout div.SalirSeccion {
+        font-size: 14px;
+    }
+
+    /*parametro nuevo de la letra del footer*/
+    footer div.reproductor div.volumen span,
+    footer div.reproductor div.barra-progreso span {
+        font-size: 10px;
+    }
+    /*parametro nuevo de botones del footer*/
+    footer div.controles button {
+        width: 40px;
+        height: 20px; 
+        font-size: 14px; 
+        
+    }
+}
+/*-------------------------------------------------------------------------*/
+
+

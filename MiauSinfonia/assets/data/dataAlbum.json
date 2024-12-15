@@ -1,0 +1,548 @@
+{
+    "albums": [
+        {
+            "titulo": "Imagine Dragons",
+            "imagen": "assets/playlist/Imagine Dragons/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "Believer",
+                    "src": "assets/playlist/Imagine Dragons/Believer.mp3"
+                },
+                {
+                    "nombre": "Enemy",
+                    "src": "assets/playlist/Imagine Dragons/Enemy.mp3"
+                },
+                {
+                    "nombre": "Warrior",
+                    "src": "assets/playlist/Imagine Dragons/Warrior.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Linkin Park",
+            "imagen": "assets/playlist/Linkin Park/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "Faint",
+                    "src": "assets/playlist/Linkin Park/Faint.mp3"
+                },
+                {
+                    "nombre": "Numb",
+                    "src": "assets/playlist/Linkin Park/Numb.mp3"
+                },
+                {
+                    "nombre": "My Selft",
+                    "src": "assets/playlist/Linkin Park/My_Selft.mp3"
+                },
+                {
+                    "nombre": "In The End",
+                    "src": "assets/playlist/Linkin Park/In_The_End.mp3"
+                },
+                {
+                    "nombre": "Crawling",
+                    "src": "assets/playlist/Linkin Park/Crawling.mp3"
+                },
+                {
+                    "nombre": "Breaking The Habit",
+                    "src": "assets/playlist/Linkin Park/Breaking_The_Habit.mp3"
+                },
+                {
+                    "nombre": "Scars Of Life",
+                    "src": "assets/playlist/Linkin Park/Scars_Of_Life.mp3"
+                },
+                {
+                    "nombre": "SomeWhere I Belong",
+                    "src": "assets/playlist/Linkin Park/SomeWhere_I_Belong.mp3"
+                },
+                {
+                    "nombre": "What I Have Done",
+                    "src": "assets/playlist/Linkin Park/What_I_Have_Done.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Skillet",
+            "imagen": "assets/playlist/Skillet/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "Hero",
+                    "src": "assets/playlist/Skillet/Hero.mp3"
+                },
+                {
+                    "nombre": "Monster",
+                    "src": "assets/playlist/Skillet/Monster.mp3"
+                },
+                {
+                    "nombre": "Not_Gonna_Die",
+                    "src": "assets/playlist/Skillet/Not_Gonna_Die.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "The Used",
+            "imagen": "assets/playlist/The Used/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "Good Bye To You",
+                    "src": "assets/playlist/The Used/Good_Bye_To_You.mp3"
+                },
+                {
+                    "nombre": "In Your Eyes",
+                    "src": "assets/playlist/The Used/In_Your_Eyes.mp3"
+                },
+                {
+                    "nombre": "The Bird And The Worm",
+                    "src": "assets/playlist/The Used/The_Bird_And_The_Worm.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Evanescence",
+            "imagen": "assets/playlist/Evanescence/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "Bring Me To Life",
+                    "src": "assets/playlist/Evanescence/Bring Me To Life.mp3"
+                },
+                {
+                    "nombre": "Going Under Fallen",
+                    "src": "assets/playlist/Evanescence/Going Under Fallen(Retail).mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Thousand Foot Krutch",
+            "imagen": "assets/playlist/Thousand Foot Krutch/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "Courtesy Call",
+                    "src": "assets/playlist/Thousand Foot Krutch/Courtesy Call.mp3"
+                },
+                {
+                    "nombre": "Be Somebody",
+                    "src": "assets/playlist/Thousand Foot Krutch/Be Somebody.mp3"
+                },
+                {
+                    "nombre": "War of Change",
+                    "src": "assets/playlist/Thousand Foot Krutch/War of Change.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "BLACKPINK",
+            "imagen": "assets/playlist/BLACKPINK/logo.png",
+            "categoria": "K-pop",
+            "canciones": [
+                {
+                    "nombre": "Pink Venom",
+                    "src": "assets/playlist/BLACKPINK/Pink Venom.mp3"
+                },
+                {
+                    "nombre": "Queencard",
+                    "src": "assets/playlist/BLACKPINK/Queencard.mp3"
+                },
+                {
+                    "nombre": "Ice Cream",
+                    "src": "assets/playlist/BLACKPINK/Ice Cream.mp3"
+                },
+                {
+                    "nombre": "How You Like That",
+                    "src": "assets/playlist/BLACKPINK/How You Like That.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Kane Brown",
+            "imagen": "assets/playlist/Kane Brown/logo.png",
+            "categoria": "Country",
+            "canciones": [
+                {
+                    "nombre": "Bury Me in Georgia",
+                    "src": "assets/playlist/Kane Brown/Bury Me in Georgia.mp3"
+                },
+                {
+                    "nombre": "Heaven",
+                    "src": "assets/playlist/Kane Brown/Heaven.mp3"
+                },
+                {
+                    "nombre": "Like I Love Country Music",
+                    "src": "assets/playlist/Kane Brown/Like I Love Country Music.mp3"
+                },
+                {
+                    "nombre": "What Ifs ft",
+                    "src": "assets/playlist/Kane Brown/What Ifs ft.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Taylor Swift",
+            "imagen": "assets/playlist/Taylor Swift/logo.png",
+            "categoria": "Pop",
+            "canciones": [
+                {
+                    "nombre": "Blank Space",
+                    "src": "assets/playlist/Taylor Swift/Blank Space.mp3"
+                },
+                {
+                    "nombre": "Lover",
+                    "src": "assets/playlist/Taylor Swift/Lover.mp3"
+                },
+                {
+                    "nombre": "Paper Rings",
+                    "src": "assets/playlist/Taylor Swift/Paper Rings.mp3"
+                },
+                {
+                    "nombre": "Shake It Off",
+                    "src": "assets/playlist/Taylor Swift/Shake It Off.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Marshmello",
+            "imagen": "assets/playlist/Marshmello/logo.png",
+            "categoria": "Dance/Electrónica",
+            "canciones": [
+                {
+                    "nombre": "Paralyzed",
+                    "src": "assets/playlist/Marshmello/Paralyzed.mp3"
+                },
+                {
+                    "nombre": "Stars",
+                    "src": "assets/playlist/Marshmello/Stars.mp3"
+                },
+                {
+                    "nombre": "Summer",
+                    "src": "assets/playlist/Marshmello/Summer.mp3"
+                },
+                {
+                    "nombre": "ft. Bastille - Happier",
+                    "src": "assets/playlist/Marshmello/ft. Bastille - Happier.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Rawayana",
+            "imagen": "assets/playlist/Rawayana/logo.png",
+            "categoria": "Reggae",
+            "canciones": [
+                {
+                    "nombre": "Danny Ocean",
+                    "src": "assets/playlist/Rawayana/Danny Ocean.mp3"
+                },
+                {
+                    "nombre": "Double Cheese",
+                    "src": "assets/playlist/Rawayana/Double Cheese.mp3"
+                },
+                {
+                    "nombre": "Sin Ti  Rawayana",
+                    "src": "assets/playlist/Rawayana/Sin Ti  Rawayana.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Ariana Grande",
+            "imagen": "assets/playlist/Ariana Grande/logo.png",
+            "categoria": "Pop",
+            "canciones": [
+                {
+                    "nombre": "34+35",
+                    "src": "assets/playlist/Ariana Grande/34+35.mp3"
+                },
+                {
+                    "nombre": "Break Free",
+                    "src": "assets/playlist/Ariana Grande/Break Free.mp3"
+                },
+                {
+                    "nombre": "One Last Time",
+                    "src": "assets/playlist/Ariana Grande/One Last Time.mp3"
+                },
+                {
+                    "nombre": "Problem ft Iggy Azalea",
+                    "src": "assets/playlist/Ariana Grande/Problem ft Iggy Azalea.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Dua Lipa",
+            "imagen": "assets/playlist/Dua Lipa/logo.png",
+            "categoria": "Dance",
+            "canciones": [
+                {
+                    "nombre": "Break My Heart",
+                    "src": "assets/playlist/Dua Lipa/Break My Heart.mp3"
+                },
+                {
+                    "nombre": "Levitating Featuring DaBaby",
+                    "src": "assets/playlist/Dua Lipa/Levitating Featuring DaBaby.mp3"
+                },
+                {
+                    "nombre": "Love Again",
+                    "src": "assets/playlist/Dua Lipa/Love Again.mp3"
+                },
+                {
+                    "nombre": "New Rules",
+                    "src": "assets/playlist/Dua Lipa/New Rules.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Sia",
+            "imagen": "assets/playlist/Sia/logo.png",
+            "categoria": "Dance",
+            "canciones": [
+                {
+                    "nombre": "Alive",
+                    "src": "assets/playlist/Sia/Alive.mp3"
+                },
+                {
+                    "nombre": "Chandelier",
+                    "src": "assets/playlist/Sia/Chandelier.mp3"
+                },
+                {
+                    "nombre": "Elastic Heart",
+                    "src": "assets/playlist/Sia/Elastic Heart.mp3"
+                },
+                {
+                    "nombre": "Hey Boy",
+                    "src": "assets/playlist/Sia/Hey Boy.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Romeo Santos",
+            "imagen": "assets/playlist/Romeo Santos/logo.png",
+            "categoria": "Bachata",
+            "canciones": [
+                {
+                    "nombre": "Cancioncitas de Amor",
+                    "src": "assets/playlist/Romeo Santos/Cancioncitas de Amor.mp3"
+                },
+                {
+                    "nombre": "Hilito",
+                    "src": "assets/playlist/Romeo Santos/Hilito.mp3"
+                },
+                {
+                    "nombre": "La Diabla Mi Santa",
+                    "src": "assets/playlist/Romeo Santos/La Diabla Mi Santa.mp3"
+                },
+                {
+                    "nombre": "Sobredosis",
+                    "src": "assets/playlist/Romeo Santos/Sobredosis.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Twice",
+            "imagen": "assets/playlist/Twice/logo.png",
+            "categoria": "K-pop",
+            "canciones": [
+                {
+                    "nombre": "FANCY",
+                    "src": "assets/playlist/Twice/FANCY.mp3"
+                },
+                {
+                    "nombre": "SET ME FREE",
+                    "src": "assets/playlist/Twice/SET ME FREE.mp3"
+                },
+                {
+                    "nombre": "The Feels",
+                    "src": "assets/playlist/Twice/The Feels.mp3"
+                },
+                {
+                    "nombre": "What is Love",
+                    "src": "assets/playlist/Twice/What is Love.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Oscar De Leon",
+            "imagen": "assets/playlist/Oscar De Leon/logo.png",
+            "categoria": "Salsa",
+            "canciones": [
+                {
+                    "nombre": "El Baile Del Suavecito",
+                    "src": "assets/playlist/Oscar De Leon/El Baile Del Suavecito.mp3"
+                },
+                {
+                    "nombre": "Lloraras",
+                    "src": "assets/playlist/Oscar De Leon/Lloraras.mp3"
+                },
+                {
+                    "nombre": "Mira Pa Ahi",
+                    "src": "assets/playlist/Oscar De Leon/Mira Pa Ahi.mp3"
+                },
+                {
+                    "nombre": "Ven Morena",
+                    "src": "assets/playlist/Oscar De Leon/Ven Morena.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Eddie Santiago",
+            "imagen": "assets/playlist/Eddie Santiago/logo.png",
+            "categoria": "Salsa",
+            "canciones": [
+                {
+                    "nombre": "Antídoto Y Veneno",
+                    "src": "assets/playlist/Eddie Santiago/Antídoto Y Veneno.mp3"
+                },
+                {
+                    "nombre": "Lluvia",
+                    "src": "assets/playlist/Eddie Santiago/Lluvia.mp3"
+                },
+                {
+                    "nombre": "Mia",
+                    "src": "assets/playlist/Eddie Santiago/Mia.mp3"
+                },
+                {
+                    "nombre": "Que Locura Enamorarme De Ti",
+                    "src": "assets/playlist/Eddie Santiago/Que Locura Enamorarme De Ti.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Olga Tañon",
+            "imagen": "assets/playlist/Olga Tañon/logo.png",
+            "categoria": "Merengue",
+            "canciones": [
+                {
+                    "nombre": "Es Mentiroso",
+                    "src": "assets/playlist/Olga Tañon/Es Mentiroso.mp3"
+                },
+                {
+                    "nombre": "La Gran Fiesta",
+                    "src": "assets/playlist/Olga Tañon/La Gran Fiesta.mp3"
+                },
+                {
+                    "nombre": "Lo Que Está Pa' Ti",
+                    "src": "assets/playlist/Olga Tañon/Lo Que Está Pa' Ti.mp3"
+                },
+                {
+                    "nombre": "Todo Lo Que Sube y Baja",
+                    "src": "assets/playlist/Olga Tañon/Todo Lo Que Sube y Baja.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Eddy Herrera",
+            "imagen": "assets/playlist/Eddy Herrera/logo.png",
+            "categoria": "Merengue",
+            "canciones": [
+                {
+                    "nombre": "Como Llora Mi Alma",
+                    "src": "assets/playlist/Eddy Herrera/Como Llora Mi Alma.mp3"
+                },
+                {
+                    "nombre": "Demasiado Niña",
+                    "src": "assets/playlist/Eddy Herrera/Demasiado Niña.mp3"
+                },
+                {
+                    "nombre": "Pegame Tu Vicio",
+                    "src": "assets/playlist/Eddy Herrera/Pegame Tu Vicio.mp3"
+                },
+                {
+                    "nombre": "Tu Eres Ajena",
+                    "src": "assets/playlist/Eddy Herrera/Tu Eres Ajena.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Liz",
+            "imagen": "assets/playlist/Liz/logo.png",
+            "categoria": "Merengue",
+            "canciones": [
+                {
+                    "nombre": "Diávolo",
+                    "src": "assets/playlist/Liz/Diávolo.mp3"
+                },
+                {
+                    "nombre": "El Mal De Amor Se Cura",
+                    "src": "assets/playlist/Liz/El Mal De Amor Se Cura.mp3"
+                },
+                {
+                    "nombre": "Mi Gloria Es Tu Condena",
+                    "src": "assets/playlist/Liz/Mi Gloria Es Tu Condena.mp3"
+                },
+                {
+                    "nombre": "Zúmbalo",
+                    "src": "assets/playlist/Liz/Zúmbalo.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Chayanne",
+            "imagen": "assets/playlist/Chayanne/logo.png",
+            "categoria": "Pop",
+            "canciones": [
+                {
+                    "nombre": "Torero",
+                    "src": "assets/playlist/Chayanne/Torero.mp3"
+                },
+                {
+                    "nombre": "Humanos a Marte",
+                    "src": "assets/playlist/Chayanne/Humanos a Marte.mp3"
+                },
+                {
+                    "nombre": "Yo Te Amo",
+                    "src": "assets/playlist/Chayanne/Yo Te Amo.mp3"
+                },
+                {
+                    "nombre": "Y Tú Te Vas",
+                    "src": "assets/playlist/Chayanne/Y Tú Te Vas.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Queen",
+            "imagen": "assets/playlist/Queen/logo.png",
+            "categoria": "Rock",
+            "canciones": [
+                {
+                    "nombre": "We Will Rock You",
+                    "src": "assets/playlist/Queen/We Will Rock You.mp3"
+                },
+                {
+                    "nombre": "Somebody To Love",
+                    "src": "assets/playlist/Queen/Somebody To Love.mp3"
+                },
+                {
+                    "nombre": "Killer Queen",
+                    "src": "assets/playlist/Queen/Killer Queen.mp3"
+                },
+                {
+                    "nombre": "We Are The Champions",
+                    "src": "assets/playlist/Queen/We Are The Champions.mp3"
+                }
+            ]
+        },
+        {
+            "titulo": "Juan Gabriel",
+            "imagen": "assets/playlist/Juan Gabriel/logo.png",
+            "categoria": "Ranchera",
+            "canciones": [
+                {
+                    "nombre": "Abrázame Muy Fuerte",
+                    "src": "assets/playlist/Juan Gabriel/Abrázame Muy Fuerte.mp3"
+                },
+                {
+                    "nombre": "Así Fue",
+                    "src": "assets/playlist/Juan Gabriel/Así Fue.mp3"
+                },
+                {
+                    "nombre": "Hasta Que Te Conoci",
+                    "src": "assets/playlist/Juan Gabriel/Hasta Que Te Conoci.mp3"
+                },
+                {
+                    "nombre": "Por Qué Me Haces Llorar",
+                    "src": "assets/playlist/Juan Gabriel/Por Qué Me Haces Llorar.mp3"
+                }
+            ]
+        }
+    ]
+}

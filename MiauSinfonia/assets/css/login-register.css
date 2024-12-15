@@ -1,0 +1,207 @@
+/*Declaracion de Variable y Letra*/
+:root{
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+/*Parametros de Todo*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*Parametros de Body*/
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #353535;
+    color: aliceblue;
+    text-align: center;
+}
+
+/*======Main Contenido======*/
+/*Main Contenido*/
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Parametros Div donde esta el form*/
+main div.login {
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e;
+}
+
+/*Parametros donde esta el titulo*/
+main div.login div.titulo h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.0em;
+}
+
+/*Parametros Div donde esta el logo*/
+main div.login div.logo {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/*Parametros de la imagen del logo*/
+main div.login div.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Parametros del form*/
+main div.login form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/*Parametros de los divs del form*/
+main div.login form div.input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+/*Parametros del los label de los inputs*/
+main div.login form div.input label {
+    font-size: 1.05em;
+}
+
+/*Parametros de los inputs*/
+main div.login form div.input input {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    outline-color: #1ae200;
+    box-sizing: border-box;
+}
+
+/*Parametros del input submit*/
+main div.login form input[type='submit'] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #068f3c;
+    color: aliceblue;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*Parametros del input submit: Animacioon al hacer Click*/
+main div.login form input[type='submit']:active {
+    transform: scale(0.97);
+}
+
+/*Parametros del no tienes cuenta?*/
+main div.login p {
+    font-size: 15px;
+}
+
+/*Parametros del registrate*/
+main div.login p a {
+    text-decoration: none;
+    color: #0d6d1a;
+}
+
+/*Parametros del registrate: animacion al pasal el mouses*/
+main div.login p a:hover {
+    color: #068f3c;
+    transition: 0.5s;
+}
+
+
+
+
+/* Media Queries Para El responsive */
+/* Cuando la Pagina toma de resolucion [480 y 768]px */
+@media (max-width: 768px) {
+
+    /*Parametros Div donde esta el form*/
+    main div.login {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /*Parametros donde esta el titulo*/
+    main div.login div.titulo h2 {
+        font-size: 1.5em; 
+    }
+
+    
+    /*Parametros donde esta el div del logo*/
+    main div.login div.logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    /*Parametros boton Submit*/
+    main div.login form input[type='submit'] {
+        font-size: 16px;
+    }
+
+    /*Parametros letra de aun no tienes cuenta?*/
+    main div.login p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    /*Parametros Div donde esta el form*/
+    main div.login {
+        width: 95%;
+    }
+
+    /*Parametros donde esta el titulo*/
+    main div.login div.titulo h2 {
+        font-size: 1.2em;
+    }
+
+    /*Parametros donde esta el div del logo*/
+    main div.login div.logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    /*Parametros boton Submit*/
+    main div.login form input[type='submit'] {
+        font-size: 14px; 
+    }
+
+    /*Parametros letra de aun no tienes cuenta?*/
+    main div.login p {
+        font-size: 12px; 
+    }
+}

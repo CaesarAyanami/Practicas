@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plugin/fontawesome-free-6.6.0-web/css/all.min.css"><!--Css de FotAwesome-->
+    <link rel="stylesheet" href="assets/css/login-register.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <title>Registro</title>
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="titulo">
+                <h2>Registrate</h2>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <form id="signupForm">
+                <div class="input">
+                    <label>Nombre  <i class="fa-solid fa-user"></i> </label>
+                    <input type="text" placeholder = " Ingresa tu Nombre" id="name" required autofocus >
+                </div>
+                <div class="input">
+                    <label>Correo <i class="fa-regular fa-envelope"></i></label>
+                    <input type="email" placeholder="Ingresa tu Correo" id="email" required>
+                </div>
+                <div class="input">
+                    <label>Contraseña <i class="fa-solid fa-lock"></i></label>
+                    <input type="password" placeholder="Ingresa una Contraseña" id="password" required>
+                </div>
+                <input type="submit" value="Registro">
+            </form>
+            <p>Ya tienes una cuenta? <a href="login.html">Iniciar</a></p>
+        </div>
+    </main>
+    <script src="assets/js/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/plugin/fontawesome-free-6.6.0-web/css/all.min.css"><!--Css de FotAwesome-->
+    <link rel="stylesheet" href="assets/css/reproductor.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <title>Reproductor</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+            <a href="#"><p>MiauSinfonia</p></a>
+        </div>
+        <div class="login">
+            <div class="IniciarS">
+                <a href="./login.html">Iniciar Sesion</a>
+            </div>
+            <div class="Registrarse">
+                <a href="./signup.html">Registrarse</a>
+            </div>
+        </div>
+        <div class="logout">
+            <div class="NameS">
+                <a id="userName" href="#">usuario</a>
+            </div>
+            <div class="SalirSeccion">
+                <a href="./login.html">Salir</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="list">
+            <div class="back-arrow"><a href="./index.html">&#8592;</a></div>
+            <div class="info">
+                <div class="titulo">
+                    <h2 id="nombreAlbum">Cancion</h2>
+                </div>
+                <div class="img">
+                    <img id="logoM" src="./assets/img/noh.jpg" alt="a">
+                </div>
+            </div>
+            <ul id="contenedor" class="musica">
+            
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="reproductor">
+            <audio id="musica"></audio>
+            <div class="barra-progreso">
+                <input type="range" id="progressBar" min="0" max="100" value="0">
+                <span id="tiempo-transcurrido">0:00</span> <span>/</span> <span id="tiempo-total">0:00</span>
+            </div>
+            <div class="volumen">
+                <input type="range" id="volumeBar" min="0" max="100" value="100">
+                <span id="volumen-porcentaje">100%</span>
+            </div>
+            <div class="controles">
+                <button id="prevButton"><i class="fa-solid fa-backward"></i></button>
+                <button id="playButton"><i class="fa-solid fa-play"></i></button>
+                <button id="nextButton"><i class="fa-solid fa-forward"></i></button>
+                <button id="randomButton"><i class="fa-solid fa-arrows-left-right"></i></button>
+                <button id="bucleButton"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/SeccionActiva.js"></script>
+    <script src="assets/js/listaReproductor.js"></script>
+</body>
+</html>
