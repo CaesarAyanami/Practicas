@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sopa de letras</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+
+        <!-- Librerias para generar el juego -->
+        <script type="text/javascript" src="js/wordfind.js"></script>
+        <script type="text/javascript" src="js/wordfindgame.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+        <!-- Libreria para ingreso de palabras -->
+        <script type="text/javascript" src="js/tag-it.js"></script>
+    </head>
+    <body>
+<!-------------------------------------------------------Cabesera de Pagina--------------------------------------------------->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"><img src="../../Imagenes/source-1.png" alt="A"></i>
+            </label>
+            <a href="../../index.html" class="enlace">
+                <img src="../../Imagenes/logo.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a class="active" href="#footerS">Sopa de Letras</a></li>
+                <li><a href="../Organization/index.html">Organization</a></li>
+                <li><a href="../Quiz/index.html">Quiz</a></li>
+            </ul>
+        </nav>
+<!-------------------------------------------------------Cabesera de Pagina--------------------------------------------------->
+
+
+
+        <div class="container">
+            <div class="row">
+
+                <script type="text/javascript">
+                    var ListaPalabras;
+
+                    $(document).ready(function() 
+                    {
+                        ListaPalabras = $("#listaPalabras").tagit({});
+                        Crear();
+                    });
+                </script>
+
+                <div class="row text-center">
+                    <br/>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Palabras a Buscar</h4>
+                        </div>
+                        <div class="panel-body">
+                            <!-- Palabras por defecto -->
+                            <ul id="listaPalabras">
+                                <li>Coche </li>
+                                <li>Carro</li>
+                                <li>Cerilla </li>
+                                <li>Fosforo</li>
+                                <li>Bastoncillo </li>
+                                <li>Cotonete</li>
+                                <li>Percha</li>
+                                <li>Gancho</li>
+                                <li>Charlar</li>
+                                <li>Platicar</li>
+                            </ul>
+
+                            <script type="text/javascript">
+
+                            function randomizar(){
+
+                                const lista = document.getElementById('listaPalabras').getElementsByTagName('li');
+                                
+                                const textos = [
+                                    'Coche', 
+                                    'Carro', 
+                                    'Cerilla',
+                                    'Fosforo',
+                                    'Bastoncillo',
+                                    'Cotonete',
+                                    'Percha',
+                                    'Gancho',
+                                    'Charlar',
+                                    'Platicar',
+                                    'Ordenador',
+                                    'Computadora',
+                                    'Mechero',
+                                    'Encendedor',
+                                    'Sapo',
+                                    'Soplon',
+                                    'Cruce',
+                                    'Negocio',
+                                    'Batidor',
+                                    'Soplo',
+                                    'Milico',
+                                    'Militar',
+                                    'Choro',
+                                    'Ladron',
+                                    'Chiva',
+                                    'Bicicleta',
+                                    'Chapa',
+                                    'Moneda'
+                                ];
+
+                                function shuffleArray(array)   
+                                {
+                                    for (let i = array.length - 1; i > 0; i--) 
+                                    {
+                                        const j = Math.floor(Math.random() * (i + 1));
+                                        [array[i], array[j]] = [array[j], array[i]];
+                                    }
+                                }
+
+                                shuffleArray(textos);
+
+                                for (let i = 0; i < lista.length && i < 5; i++) 
+                                {
+                                    lista[i].textContent = textos[i];
+                                }
+                            };
+                            randomizar();
+                            
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center">
+                    <div>
+                        <div class="row">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4>Sopa de letras</h4>
+                                </div>
+                                <div class="panel-body row">
+                                    <div class="">
+                                        <button onclick="Crear();" class="btn btn-success btn-lg"> Crear Juego</button>
+                                        <button id='solve' class="btn btn-danger btn-lg"> Resolver</button>
+                                    </div>
+                                    <!-- Resultado de la sopa de letras con las palabras a buscar -->
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div id='Palabras'></div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div id='juego'></div>
+                                            <p>Busca las palabras que aparecen al lado izquierdo de la sopa de letras, deberas de mentener seleccionado con el raton las letras que crees que conforman la palabras y si la palabra coincide con la que se busca se
+                                                colocara de color azul y se quitara de la lista.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div> 
+
+<!-------------------------------------------------------Pie de Pagina--------------------------------------------------->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="../../index.html">
+                            <img src="../../imagenes/LogoFooter.png" alt="Logo de SLee Dw">
+                        </a>
+                    </figure>
+                </div>
+                <div id="footerS" class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Estudiante del IUJO</p>
+                    <p>Practicas para ser futuros Profecionales</p>
+                    <p>CesarParucho; Yenderberth Paladino</p>
+                    <p>Ismael Lugo;  Jerson Orozco</p>
+                </div>
+                <div class="box">
+                    <h2>Seccion B</h2>
+                    <div class="red-dsocial">
+                        <p href="#">Con la Profa Mildred Márquez</p>
+                        <p href="#">Actividad de Lenguaje y Comunicacion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 Todos los Derechos Reservados. - <b> Desarrollado por IUJO A.C</b> </small>
+            </div>
+        </footer>
+<!-------------------------------------------------------Pie de Pagina--------------------------------------------------->
+
+
+
+
+
+                <!-- controlar la sopa de letras -->
+        <script>
+            var palabras = [];
+            var juego;
+
+            function Crear() {
+                // Tomar las palabras de la lista e introducirlas en un array
+                datos = ListaPalabras[0].textContent.trim().split("×");
+                for (i = 0; i < (datos.length) - 1; i++) 
+                {
+                    palabras.push(datos[i]);
+                }
+
+                $('#Juegos').show();
+                /* se esta indicando que en el contenedor con el id juego se va a mostrar la sopa de letras
+                y el contenedor con el id palabras va a mostrar las palabras a buscar */
+                juego = wordfindgame.create(datos, '#juego', '#Palabras');
+                // Estructura de la sopa de letras
+                var puzzle = wordfind.newPuzzle(datos, {
+                    height: 18,
+                        width: 18,
+                        fillBlanks: false
+                });
+                }
+                $('#solve').click(function() {
+                    wordfindgame.solve(juego, palabras);
+                });
+        </script>
+    </body>
+</html>

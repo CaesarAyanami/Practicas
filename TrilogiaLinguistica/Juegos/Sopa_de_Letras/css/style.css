@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Cabeza de Pagina*/
+nav{
+    background: #468c32;
+    height: 80px;
+    width: 100%;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.logo:hover{
+    height: 52px;
+    transition: .5s;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav i{
+    padding: 10px 0px 0px 0px;
+    position: absolute;
+}
+
+nav i img{
+    width: 50px;
+    height: 40px;
+    padding-right: 20px;
+}
+
+nav ul li a.active, nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #59ca26;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url(../fondo.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #038ab3;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/*Cabeza de Pagina*/
+
+/*Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #2d2d2d;
+}
+
+.box img{
+    width: 100px;
+    height: 130px;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 2px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #1c1b1b;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+/*Pie de Pagina*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .row p {
+    font: 22pt sans-serif;
+    margin: 20px 20px 0px 20px;
+    font-size: 2rem;
+    padding: 4rem;
+    padding-top: 8%;
+}
+
+
+/**
+* Styles for the puzzle
+*/
+
+#juego {
+    border: 1px solid black;
+    padding: 20px;
+    float: left;
+    margin: 30px 20px;
+}
+
+#juego div {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* style for each square in the puzzle */
+
+#juego .puzzleSquare {
+    height: 30px;
+    width: 30px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 0;
+    font: 1em sans-serif;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+
+/* indicates when a square has been selected */
+
+#juego .selected {
+    background-color: rgb(0, 195, 255);
+}
+
+
+/* indicates that the square is part of a word that has been found */
+
+#juego .found {
+    background-color: rgb(0, 100, 30);
+    color: white;
+}
+
+#juego .solved {
+    background-color: purple;
+    color: white;
+}
+
+
+/* indicates that all words have been found */
+
+#juego .complete {
+    background-color: green;
+}
+
+#Palabras {
+    padding-top: 21px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+#Palabras ul {
+    list-style-type: none;
+}
+
+#Palabras li {
+    padding: 3px 0;
+    font: 1em sans-serif;
+}
+
+
+/* indicates that the word has been found */
+
+#Palabras .wordFound {
+    text-decoration: line-through;
+    color: gray;
+}
